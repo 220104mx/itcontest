@@ -1,4 +1,4 @@
-ITコンテスト
+"C:\xampp\htdocs"
  ├─img
  │  ├─logo-sp.png
  │  ├─mainvisual1.jpg
