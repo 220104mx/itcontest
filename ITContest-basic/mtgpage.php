@@ -64,32 +64,5 @@ include("get-meeting.php");
         <h2 class="name">主催者名 <?php echo $data[0]['name']; ?></h2>
     </div> -->
 
-    <!-- -----テーブル表示する場合下記tableタグを有効に----- -->
-    <!-- <table>
-        <thead>
-            <tr>
-                <th>主催者名</th>
-                <th>会議名</th>
-                <th>会場名</th>
-                <th>予約日</th>
-                <th>開始時間</th>
-                <th>終了時間</th>
-                <th>開催形式</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($data as $row): ?>
-                <tr>
-                    <td><?php echo $row['name']; ?></td>
-                    <td><?php echo $row['mtgname']; ?></td>
-                    <td><?php echo $row['venuename']; ?></td>
-                    <td><?php echo $row['reservation']; ?></td>
-                    <td><?php echo $row['start_time']; ?></td>
-                    <td><?php echo $row['end_time']; ?></td>
-                    <td><?php echo $row['lesson']; ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table> -->
 </body>
 </html>

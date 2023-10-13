@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mtgid = mysqli_insert_id($connection);
         // データベース接続を閉じる
         mysqli_close($connection);
-        // リダイレクトを行う
+        // 会議IDをURLに持たせリダイレクトを行う
         header("Location: mtgpage.php?mtgid=" . $mtgid);
         exit; // ここでスクリプトを終了
     } else {

@@ -1,5 +1,5 @@
 <?php
-// mtgidを受け取る
+// 前のページから持ち越したmtgidをURLから受け取る
 if (isset($_GET['mtgid'])) {
     $mtgid = $_GET['mtgid'];
 
@@ -36,12 +36,12 @@ if (isset($_GET['mtgid'])) {
     require_once('./phpqrcode/qrlib.php');// ライブラリのパスを正確に指定してください
     
     // QRコードを生成するデータを作成
-    $pageUrl = "http://localhost/ITContest-basic/mtgpage.php?mtgid=" . $mtgid; // ここにURLを指定してください
+    $pageUrl = "http://localhost/ITContest-basic/mtgpage.php?mtgid=" . $mtgid; // ここに会議情報ページURLを指定してください
     $fpageUrl = "http://localhost/ITContest-basic/form.html?mtgid=" . $mtgid; // ここにフォームURLを指定してください
     
     // QRコードを生成
-    $qrCode = new QRCode($pageUrl);
-    $qrCodef = new QRCode($fpageUrl);
+    $qrCode = new QRCode($pageUrl);//これが会議情報ページ
+    $qrCodef = new QRCode($fpageUrl);//これが参加者用のID入り質問フォームへのQR
 
     // QRコードを生成
     QRcode::png($pageUrl, './img/qrcode.png'); // 画像を保存
