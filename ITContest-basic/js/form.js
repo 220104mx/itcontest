@@ -9,7 +9,9 @@ if (mtgId) {
   document.getElementById("mtgid").value = mtgId;
 }
 };
-    
+
+//-------ここまでの処理がQRから飛んできた場合に実行されてIDが入力された状態になる
+ 
 $(function(){
   // ラジオボタン下のテキスト切り替え
   // （ラジオボタンが変更されたタイミングで実行）

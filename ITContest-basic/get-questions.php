@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['mtgid'])) {
-    $mtgid = $_GET['mtgid'];
+    $mtgid = $_GET['mtgid'];//現在のURLからIDを取得
 
     // データベース接続情報
     $dbHost = "127.0.0.1";

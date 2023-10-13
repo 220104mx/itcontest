@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (mysqli_query($connection, $query)) {
     // データベース接続を閉じる
     mysqli_close($connection);
-    // リダイレクトを行う
+    // 該当する会議の質問一覧に飛ぶようURLにidを持たせリダイレクトを行う
     header("Location: ./questions.php?mtgid=" . $mtgid);
     exit; // ここでスクリプトを終了
   } else {
